@@ -2,11 +2,6 @@
   height: 800px;
   background-image: url("/resources/images/birds-in-front-of-propylaea.jpg");
   background-position: 50% 30%;
-  position:absolute;
-  top:0;
-  width:100%;
-  box-sizing: border-box;
-  z-index: -1;
 }
 
 #hero-content {
