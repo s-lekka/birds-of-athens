@@ -1,0 +1,47 @@
+#hero {
+  height: 800px;
+  background-image: url("/resources/images/birds-in-front-of-propylaea.jpg");
+  background-position: 50% 30%;
+}
+
+#hero-content {
+  width: 900px;
+  background-color: rgba(51, 47, 47, 0.8);
+  box-shadow: 0 0 8px black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 50px 0;
+  margin: 0 auto;
+  position: relative;
+  top: 200px;
+}
+
+#hero-content h1 {
+    color:white;
+    font-size: 50px;
+    margin:0;
+    font-family: 'Alegreya SC', serif;
+}
+
+#hero-content p {
+    color:white;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 32px;
+} 
+
+#hero-content a {
+    background-color: firebrick;
+    padding: 12px 24px 6px;
+    color:black;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 0 0 8px black;
+}
+
+#hero-content a:hover {
+    background-color: darkred;
+}
