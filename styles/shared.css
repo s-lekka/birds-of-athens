@@ -43,7 +43,7 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 25px;
+    font-size: 20px;
     color:brown;
 }
 
@@ -57,14 +57,16 @@ nav li+li {
 
 h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
+    padding-top: 25px;
+    margin-top: 0;
 }
 
 #page-logo a {
     padding: 10px;
     font-weight: 700;
     color: #560000;
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Alegreya SC', serif;
     text-shadow: 0px 0px 10px white;
 }
