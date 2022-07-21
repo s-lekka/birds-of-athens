@@ -33,8 +33,11 @@ nav a:hover{
     box-shadow: 0 0 2px rgb(255, 255, 255);
 }
 
-nav ul {
+ul {
     list-style: none;
+}
+
+nav ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -46,6 +49,11 @@ nav ul {
 
 nav li {
     padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
 }
 
 #page-logo a {

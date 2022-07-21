@@ -45,3 +45,21 @@
 #hero-content a:hover {
     background-color: darkred;
 }
+
+#birds {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 25px;
+}
+
+sub {
+    color: darkred;
+}
+
+#birds img {
+    width: 500px;
+    height: 300px;
+
+}
