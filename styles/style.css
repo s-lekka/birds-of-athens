@@ -18,9 +18,9 @@
 
 #hero-content h1 {
     color:white;
-    font-size: 40px;
+    font-size: 35px;
     margin:0;
-    font-family: 'Alegreya SC', serif;
+   
 }
 
 #hero-content p {
@@ -58,7 +58,7 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 sub {
