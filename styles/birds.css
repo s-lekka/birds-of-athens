@@ -37,7 +37,7 @@ main ul {
 main li {
   display: flex;
   background-color: white;
-  box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.308);
+  box-shadow: 0 0 10px darkslategray;
   border-radius: 6px;
   overflow: hidden;
 }
