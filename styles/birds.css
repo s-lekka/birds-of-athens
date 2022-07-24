@@ -1,4 +1,42 @@
-main{
-    height: 800px;
+body {
     background: linear-gradient(180deg, #5e96bb, #a4d8fb);
 }
+
+header {
+    position: static;
+}
+
+main{
+    height: fit-content;
+    /* background: linear-gradient(180deg, #5e96bb, #a4d8fb); */
+    padding-top: 50px;
+}
+
+img{
+    width:250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+h2 {
+    text-align: start;
+    font-size: 20px;
+    padding: 0;
+    margin:0;
+}
+
+main ul {
+    width: 800px;
+    margin:0 auto;
+}
+
+main li {
+    display: flex;
+}
+
+.item-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
