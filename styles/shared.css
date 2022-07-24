@@ -63,6 +63,10 @@ h2 {
     margin-top: 0;
 }
 
+sub {
+    color: darkred;
+}
+
 #page-logo a {
     padding: 10px;
     font-weight: 700;
