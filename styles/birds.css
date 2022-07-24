@@ -10,7 +10,7 @@ header {
 main {
   height: fit-content;
   /* background: linear-gradient(180deg, #5e96bb, #a4d8fb); */
-  padding-top: 50px;
+  padding: 50px 20px 0;
 }
 
 img {
@@ -27,11 +27,12 @@ h2 {
 }
 
 main ul {
-  width: 1200px;
+  /* width: 1200px; */
   margin: 0 auto 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px 20px;
+  padding:0;
 }
 
 main li {
