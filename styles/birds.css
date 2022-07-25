@@ -15,8 +15,12 @@ main {
 
 img {
   width: 250px;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
+}
+
+#blackbird-img {
+  object-position: 80% 0;
 }
 
 h2 {
@@ -41,6 +45,7 @@ main li {
   box-shadow: 0 0 10px darkslategray;
   border-radius: 6px;
   overflow: hidden;
+  min-width: 413px;
 }
 
 li:nth-of-type(3) {
