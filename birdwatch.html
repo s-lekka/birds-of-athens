@@ -50,7 +50,50 @@
         </ul>
       </nav>
     </aside>
-    <main id="main"></main>
+    <main id="main">
+    <h1>What bird did I spot?</h1> 
+      <form action="" method="GET">
+        <h2>Beak Size</h2>
+        <div class="form-control-inline">
+          <label for="small-beak">Small</label>
+          <input type="radio" name="beak-size" id="small-beak" value="S" />
+        </div>
+        <div class="form-control-inline">
+          <label for="medium-beak">Medium</label
+          ><input type="radio" name="beak-size" id="medium-beak" value="M" />
+        </div>
+        <div class="form-control-inline">
+          <label for="large-beak">Large</label
+          ><input type="radio" name="beak-size" id="large-beak" value="L" />
+        </div>
+        <h2>Characteristics</h2>
+        <div class="form-control-inline">
+          <label for="characteristics">Long Tail</label>
+          <input
+            type="checkbox"
+            id="long-tail"
+            name="characteristics"
+            value="longtail"
+          />
+        </div>
+        <h2>More Info</h2>
+        <div>
+          <label for="location-type">Location Type: </label>
+          <select id="location-type" name="location">
+            <option value="grass">Grass</option>
+            <option value="sky">Flying</option>
+            <option value="cable">Cable Wire</option>
+            <option value="tree">Tree</option>
+            <option value="square">Square</option>
+            <option value="park">Park</option>
+            <option value="pond">Pond</option>
+            <option value="cage">Cage</option>
+          </select>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </main>
     <footer>
       <ul>
         <li>
