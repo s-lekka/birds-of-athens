@@ -1,0 +1,24 @@
+header {
+  position: static;
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+form {
+    background-color: rgba(35, 65, 113, 0.833);
+    width: 20rem;
+    padding: 2rem;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
