@@ -50,49 +50,54 @@
         </ul>
       </nav>
     </aside>
-    <main id="main" style="min-height: 800px;">
-        <h1>New User</h1>
-        <form action="" method="POST">
-            <section id="user-info">
-                <h2>User Info</h2>
-                <ul>
-                    <li>
-                        <label for="name">Name</label>
-                        <input type="text">
-                    </li>
-                    <li>
-                        <label for="country">Country</label>
-                        <input type="text">
-                    </li>
-                    <li>
-                        <label for="birthday">Date of Birth</label>
-                        <input type="date">
-                    </li>
-                    <li>
-                        <label for="about-me">About Me</label>
-                        <textarea name="aboutme" id="about-me" rows="5"></textarea>
-                    </li>
-                </ul>
-            </section>
-            <hr>
-            <section id="account-info">
+    <main id="main" style="min-height: 800px">
+      <h1>New User</h1>
+      <form action="" method="POST">
+        <div id="register-data">
+          <section id="user-info">
+            <h2>User Info</h2>
+            <ul>
+              <li>
+                <label for="name">Name</label>
+                <input type="text" />
+              </li>
+              <li>
+                <label for="country">Country</label>
+                <input type="text" />
+              </li>
+              <li>
+                <label for="birthday">Date of Birth</label>
+                <input type="date" />
+              </li>
+              <li>
+                <label for="about-me">About Me</label>
+                <textarea name="aboutme" id="about-me" rows="5"></textarea>
+              </li>
+            </ul>
+          </section>
+          <hr />
+          <section id="account-info">
             <h2>Account Info</h2>
             <ul>
-                <li><label for="username">Username</label>
-                    <input type="text">
-                </li>
-                <li>
-                    <label for="email">e-mail</label>
-                    <input type="email">
-                </li>    
-                <li>
-                    <label for="password">Password</label>
-                    <input type="password">
-                </li>
+              <li>
+                <label for="username">Username</label>
+                <input type="text" />
+              </li>
+              <li>
+                <label for="email">e-mail</label>
+                <input type="email" />
+              </li>
+              <li>
+                <label for="password">Password</label>
+                <input type="password" />
+              </li>
             </ul>
-        </section>
-        <button>Submit</button>
-        </form>
+          </section>
+        </div>
+        <div>
+          <button>Submit</button>
+        </div>
+      </form>
     </main>
     <footer>
       <ul>
