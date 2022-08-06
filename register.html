@@ -52,22 +52,22 @@
     </aside>
     <main id="main" style="min-height: 800px">
       <h1>New User</h1>
-      <form action="" method="POST">
+      <form action="/" method="POST">
         <div id="register-data">
           <section id="user-info">
             <h2>User Info</h2>
             <ul>
               <li>
                 <label for="name">Name</label>
-                <input type="text" />
+                <input type="text" id="name" placeholder="fisrt name" required/>
               </li>
               <li>
                 <label for="country">Country</label>
-                <input type="text" />
+                <input type="text" id="country"/>
               </li>
               <li>
                 <label for="birthday">Date of Birth</label>
-                <input type="date" />
+                <input type="date" id="birthday" max="2004-12-31" required/>
               </li>
               <li>
                 <label for="about-me">About Me</label>
@@ -81,15 +81,15 @@
             <ul>
               <li>
                 <label for="username">Username</label>
-                <input type="text" />
+                <input type="text" id="username" required/>
               </li>
               <li>
                 <label for="email">e-mail</label>
-                <input type="email" />
+                <input type="email" id="email" required/>
               </li>
               <li>
                 <label for="password">Password</label>
-                <input type="password" />
+                <input type="password" id="password" minlength="7" required/>
               </li>
             </ul>
           </section>

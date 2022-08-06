@@ -51,6 +51,10 @@ input:focus,  input:hover, textarea:focus, textarea:hover{
     background-color: rgba(0, 255, 255, 0.322);
 }
 
+textarea {
+    resize: none;
+}
+
 button {
 font:  inherit;
 width: 100%;
