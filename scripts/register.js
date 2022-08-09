@@ -5,20 +5,14 @@ aboutMeBox.addEventListener('input', updateCharMeter);
 
 function updateCharMeter(event) {
     const inputBox = event.target
-    const remainingCharSpan = inputBox.nextElementSibling.childNodes.item('#remaining-chars')
+    const spanElement = inputBox.nextElementSibling.childNodes.item('#remaining-chars')
     let remainingChars = inputBox.maxLength - inputBox.value.length
     
-
     //text
-    remainingCharSpan.textContent = remainingChars
+    spanElement.textContent = remainingChars
     //color
-    if (remainingChars < 16) {
-        if (remainingChars < 6) {
-            remainingCharSpan.style.color = 'red'
-        }
-        else 
-            remainingCharSpan.style.color = 'orange'
-    }
+    if (remainingChars < 16) 
+        spanElement.classList.add('warning')
     else 
-        remainingCharSpan.style.color = initialSpanColor
+        spanElement.classList.remove('warning')
 }
