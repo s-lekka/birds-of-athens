@@ -7,12 +7,12 @@ function updateCharMeter(event) {
     const inputBox = event.target
     const spanElement = inputBox.nextElementSibling.childNodes.item('#remaining-chars')
     let remainingChars = inputBox.maxLength - inputBox.value.length
-    
+
     //text
     spanElement.textContent = remainingChars
     //color
-    if (remainingChars < 16) 
+    if (remainingChars < 16)
         spanElement.classList.add('warning')
-    else 
+    else
         spanElement.classList.remove('warning')
 }
