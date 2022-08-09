@@ -1,12 +1,13 @@
-let aboutMeBox = document.getElementById('about-me')
-let initialSpanColor = document.querySelector('#remaining-chars').style.color
+const aboutMeBox = document.getElementById('about-me')
+const initialSpanColor = document.querySelector('#remaining-chars').style.color
 
 aboutMeBox.addEventListener('input', updateCharMeter);
 
 function updateCharMeter(event) {
-    let inputBox = event.target
+    const inputBox = event.target
+    const remainingCharSpan = inputBox.nextElementSibling.childNodes.item('#remaining-chars')
     let remainingChars = inputBox.maxLength - inputBox.value.length
-    let remainingCharSpan = inputBox.nextElementSibling.childNodes.item('#remaining-chars')
+    
 
     //text
     remainingCharSpan.textContent = remainingChars
