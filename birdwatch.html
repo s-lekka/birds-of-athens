@@ -17,6 +17,8 @@
       href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;700&family=Arima:wght@200;400;700&family=Noto+Serif+Display&display=swap"
       rel="stylesheet"
     />
+    <script src="/scripts/birds.js"></script>
+    <script src="/scripts/birdwatch.js" defer></script>
   </head>
   <body>
     <header>
@@ -51,20 +53,38 @@
       </nav>
     </aside>
     <main id="main">
-    <h1>What bird did I spot?</h1> 
-      <form action="/" method="GET">
+    <h1>What bird did I spot? [Demo]</h1> 
+      <section id="guessing-game">
+        <form>
+          <h2>Bird Size</h2>
+        <div class="form-control-inline">
+          <label for="tiny-bird">Very Small 7cm-12cm</label>
+          <input type="radio" name="bird-size" id="tiny-bird" value="T" required/>
+        </div>
+        <div class="form-control-inline">
+          <label for="small-bird">Small 12cm-22cm</label>
+          <input type="radio" name="bird-size" id="small-bird" value="S" required/>
+        </div>
+        <div class="form-control-inline">
+          <label for="medium-bird">Medium 22cm-40cm</label
+          ><input type="radio" name="bird-size" id="medium-bird" value="M" required/>
+        </div>
+        <div class="form-control-inline">
+          <label for="large-bird">Large 40cm-80cm</label
+          ><input type="radio" name="bird-size" id="large-bird" value="L" required/>
+        </div>
         <h2>Beak Size</h2>
         <div class="form-control-inline">
           <label for="small-beak">Small</label>
-          <input type="radio" name="beak-size" id="small-beak" value="S" />
+          <input type="radio" name="beak-size" id="small-beak" value="S" required/>
         </div>
         <div class="form-control-inline">
           <label for="medium-beak">Medium</label
-          ><input type="radio" name="beak-size" id="medium-beak" value="M" />
+          ><input type="radio" name="beak-size" id="medium-beak" value="M" required/>
         </div>
         <div class="form-control-inline">
           <label for="large-beak">Large</label
-          ><input type="radio" name="beak-size" id="large-beak" value="L" />
+          ><input type="radio" name="beak-size" id="large-beak" value="L" required/>
         </div>
         <h2>Characteristics</h2>
         <div class="form-control-inline">
@@ -74,6 +94,51 @@
             id="long-tail"
             name="characteristics"
             value="longtail"
+          />
+        </div>
+        <h2>Colors</h2>
+        <div class="form-control-inline">
+          <label for="colors">Black</label>
+          <input
+            type="checkbox"
+            id="black-clr"
+            name="colors"
+            value="black"
+          />
+          <label for="colors">Brown</label>
+          <input
+            type="checkbox"
+            id="brown-clr"
+            name="colors"
+            value="brown"
+          />
+          <label for="colors">Blue</label>
+          <input
+            type="checkbox"
+            id="blue-clr"
+            name="colors"
+            value="blue"
+          />
+          <label for="colors">Red</label>
+          <input
+            type="checkbox"
+            id="red-clr"
+            name="colors"
+            value="red"
+          />
+          <label for="colors">Gray</label>
+          <input
+            type="checkbox"
+            id="gray-clr"
+            name="colors"
+            value="gray"
+          />
+          <label for="colors">White</label>
+          <input
+            type="checkbox"
+            id="white-clr"
+            name="colors"
+            value="white"
           />
         </div>
         <h2>More Info</h2>
@@ -91,8 +156,15 @@
           </select>
         </div>
 
-        <button>Submit</button>
-      </form>
+        <button type="submit">Submit</button>
+        </form>
+        <div id="answer">
+           <p>Is it possible you saw...</p>
+           <p id="birdname"></p>
+           <img id="birdimg" src="" alt="">
+           <p id="birdinfo"></p>
+        </div>
+      </section>
     </main>
     <footer>
       <ul>
