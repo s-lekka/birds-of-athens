@@ -19,13 +19,17 @@ h2 {
     padding: 0;
 }
 
-form {
+form, #answer {
     width: fit-content;
     margin: 1rem auto;
     background-color: rgba(35, 65, 113, 0.833);
     color: white;
     padding: 1rem;
     border-radius: 6px;
+}
+
+#answer {
+    text-align: center;
 }
 
 ul {
@@ -105,8 +109,29 @@ button:hover {
     color: orange;
 }
 
+#guessing-game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+img {
+    width: 20rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
 @media screen and (max-width: 800px) {
     #register-data {
         display: unset;
+    }
+
+    #guessing-game {
+        display: unset;
+    }
+
+    #answer {
+        width:fit-content;
+        margin: 1rem auto;
     }
 }
