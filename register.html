@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;700&family=Arima:wght@200;400;700&family=Noto+Serif+Display&display=swap"
       rel="stylesheet"
     />
-    <script src="/scripts/register.js"></script>
+    <script src="/scripts/register.js" defer></script>
   </head>
   <body>
     <header>
@@ -72,7 +72,8 @@
               </li>
               <li>
                 <label for="about-me">About Me</label>
-                <textarea name="aboutme" id="about-me" rows="5"></textarea>
+                <textarea name="aboutme" id="about-me" rows="5" maxlength="150"></textarea>
+                <p><span id="remaining-chars">150</span>/150</p>
               </li>
             </ul>
           </section>
