@@ -110,4 +110,5 @@ function showResult(bird) {
     birdImgElement.src = bird.imgsrc
     birdImgElement.alt = bird.name
     infoParagraphElement.innerHTML = bird.info
+    document.getElementById('answer').style.display = 'flex'
 }

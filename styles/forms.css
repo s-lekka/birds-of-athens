@@ -111,8 +111,9 @@ button:hover {
 
 #guessing-game {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    justify-items: right;
 }
 
 img {
