@@ -132,7 +132,7 @@ img {
     }
 
     #answer {
-        width:100%;
+        width:fit-content;
         margin: 1rem auto;
     }
 }

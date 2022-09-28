@@ -1,0 +1,8 @@
+#answer {
+    display: none;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
