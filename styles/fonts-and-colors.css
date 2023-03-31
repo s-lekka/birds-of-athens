@@ -1,0 +1,27 @@
+:root {
+    --main-color:  #5e96bb; /*air superiority blue*/
+    --secondary-color: #c6c0b1; /*dun*/
+    --secondary-color-rgb: 198, 192, 177;
+    --accent-color: #241023; /*dark-purple*/
+    --accent-color-lighter: #2b132a;
+    --black-olive: #1d271e;
+    --black-olive-rgb: 29, 39, 30;
+}
+
+body {
+    font-family: 'Arima', cursive;
+    background-color: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+nav a:hover,  .menu-btn:hover{
+    background-color: hwb(0 100% 0% / 0.626);
+}
+
+sub {
+    color: var(--accent-color);
+}
