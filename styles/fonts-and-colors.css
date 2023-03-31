@@ -1,0 +1,25 @@
+:root {
+    --main-color:  #5e96bb;
+    --highlight-color: #007792;
+    --shadow-color: #01151a;
+    --accent-color: #560000;
+    --neutral-color: #C8C8C8;
+}
+
+body {
+    font-family: 'Arima', cursive;
+    background-color: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+nav a:hover,  .menu-btn:hover{
+    background-color: rgba(255, 255, 255, 0.626);
+}
+
+sub {
+    color: darkred;
+}
