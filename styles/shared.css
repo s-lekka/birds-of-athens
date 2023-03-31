@@ -18,12 +18,12 @@ nav a {
     font-size: 1.25rem;
     font-weight: bold;
     padding: 5px 12px 0;
-    text-shadow: 0 0 1px black;
+    text-shadow: 0 0 1px var(--accent-color);
 }
 
 nav a:hover,  .menu-btn:hover{
     border-radius: 5px;
-    box-shadow: 0 0 2px rgb(255, 255, 255);
+    box-shadow: 0 0 2px var(--secondary-color);
 }
 
 #side-drawer{
@@ -48,7 +48,7 @@ nav li {
 }
 
 header nav li+li {
-    border-left: 1px solid black;
+    border-left: 1px solid var(--accent-color);
 }
 
 h2 {
@@ -61,14 +61,14 @@ h2 {
 #page-logo a {
     padding: 10px;
     font-weight: 700;
-    color: #560000;
+    color: var(--accent-color);
     font-size: 3rem;
     font-family: 'Alegreya SC', serif;
-    text-shadow: 0px 0px 10px white;
+    text-shadow: 0px 0px 10px var(--accent-color);
 }
 
 footer {
-    background:linear-gradient(90deg, rgb(63, 0, 0), rgb(108, 0, 0));
+    background:linear-gradient(90deg, var(--accent-color), var(--accent-color-lighter));
 }
 
 footer ul {
@@ -96,7 +96,7 @@ footer img {
 .menu-btn span {
     width:100%; 
     height: 3px;
-    background-color: #560000;
+    background-color: var(--accent-color);
 }
 
 @media only screen and (max-width: 800px) {
@@ -122,7 +122,7 @@ footer img {
         display:block;
         width: 100%;
         height: 100%;
-        background-color: #560000;
+        background-color: var(--accent-color);
         z-index: 2;
         position: fixed;
         top:0;
@@ -130,7 +130,7 @@ footer img {
     }
 
     #side-drawer:target ul{
-        color: white;
+        color: var(--secondary-color);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -139,11 +139,11 @@ footer img {
     
     #side-drawer:target a {
         z-index: 3;
-        color: white;
+        color: var(--secondary-color);
     }
     
     #side-drawer:target a span{
-        background-color: white;
+        background-color: var(--secondary-color);
     }
 
     #side-drawer:target div {

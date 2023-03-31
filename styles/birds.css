@@ -1,6 +1,6 @@
 body {
-  background: linear-gradient(180deg, #5e96bb, #a4d8fb);
-    color: darkslategrey;
+  background: linear-gradient(180deg, var(--main-color), var(--secondary-color));
+    color: var(--accent-color);
 }
 
 header {
@@ -41,8 +41,8 @@ main ul {
 
 main li {
   display: flex;
-  background-color: white;
-  box-shadow: 0 0 10px darkslategray;
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 10px var(--accent-color);
   border-radius: 6px;
   overflow: hidden;
   min-width: 300px;
@@ -77,12 +77,13 @@ main p {
 .actions a {
     text-decoration: none;
     padding: 6px;
-    color: darkred;
+    color: var(--accent-color);
     border-radius: 3px;
 }
 
 .actions a:hover {
-    background-color: rgb(179, 149, 149);
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 @media (max-width: 900px) {
